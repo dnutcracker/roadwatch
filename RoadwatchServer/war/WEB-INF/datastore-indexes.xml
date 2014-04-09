@@ -1,0 +1,36 @@
+<datastore-indexes  autoGenerate="true">
+
+    <!--  Used by hasAlreadyReportedThisCarRecently() -->
+    <datastore-index kind="Report" ancestor="true" source="auto">
+        <property name="licensePlate" direction="asc"/>
+        <property name="reportedBy" direction="asc"/>
+        <property name="reportTime" direction="asc"/>
+    </datastore-index>
+
+    <!--  Used by findSimilarReport() -->
+    <datastore-index kind="Report" ancestor="true" source="auto">
+        <property name="licensePlate" direction="asc"/>
+        <property name="reportCode" direction="asc"/>
+        <property name="reportTime" direction="asc"/>
+    </datastore-index>
+
+	<!--  Used by findReportsByLicensePlate() -->
+    <datastore-index kind="Report" ancestor="false" source="auto">
+        <property name="licensePlate" direction="asc"/>
+        <property name="reportTime" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used by findReportsByReporter() -->
+    <datastore-index kind="Report" ancestor="false" source="auto">
+        <property name="reportedBy" direction="asc"/>
+        <property name="reportTime" direction="desc"/>
+    </datastore-index>
+    
+    <!-- Used by findUserByLicensePlate() -->
+    <datastore-index kind="User" ancestor="true" source="auto">
+        <property name="licensePlate" direction="asc"/>
+        <property name="type" direction="asc"/>
+    </datastore-index>
+    
+
+</datastore-indexes>

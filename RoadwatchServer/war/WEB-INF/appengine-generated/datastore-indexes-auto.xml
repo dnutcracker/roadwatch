@@ -1,0 +1,37 @@
+<!-- Indices written at Mon, 27 Jan 2014 16:32:12 IST -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Report" ancestor="true" source="auto">
+        <property name="licensePlate" direction="asc"/>
+        <property name="reportedBy" direction="asc"/>
+        <property name="reportTime" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Report" ancestor="true" source="auto">
+        <property name="licensePlate" direction="asc"/>
+        <property name="reportCode" direction="asc"/>
+        <property name="reportTime" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="User" ancestor="true" source="auto">
+        <property name="licensePlate" direction="asc"/>
+        <property name="type" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 11 times in query history -->
+    <datastore-index kind="Report" ancestor="false" source="auto">
+        <property name="reportedBy" direction="asc"/>
+        <property name="reportTime" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 3 times in query history -->
+    <datastore-index kind="Report" ancestor="false" source="auto">
+        <property name="licensePlate" direction="asc"/>
+        <property name="reportTime" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

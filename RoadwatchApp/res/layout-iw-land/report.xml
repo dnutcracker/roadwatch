@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ReportActivity" >
+
+        <include
+            android:id="@+id/license_plate_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nested_linear_layout"
+            android:layout_alignRight="@+id/nested_linear_layout"
+            layout="@layout/license_plate_edit_text_layout" />
+    
+    <ProgressBar
+        android:id="@+id/send_report_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/report_button"
+        style="@style/RoadWatchButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:onClick="sendOrSaveReport"
+        android:textSize="28sp"
+        android:text="@string/save_report_button" />
+    
+        <Button
+        android:id="@+id/remove_report_button"
+        style="@style/RoadWatchButtonStyle"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/report_button"
+        android:layout_alignBottom="@+id/report_button"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:onClick="removeReport"
+        android:text="@string/action_discard"
+        android:visibility="gone"
+        android:textSize="28sp" />
+    
+
+    <LinearLayout
+        android:id="@+id/nested_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/license_plate_layout"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/action_description_label"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/danger_button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_weight="1.2"
+            android:drawableStart="@drawable/danger3"
+            android:text="@string/danger_button3" />
+
+        <Button
+            android:id="@+id/danger_button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/danger2"
+            android:text="@string/danger_button2" />
+
+        <Button
+            android:id="@+id/danger_button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/danger1"
+            android:text="@string/danger_button1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="@string/lp_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/report_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nested_linear_layout"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/location_found_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_report_progress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/action_description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/report_description"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/nested_linear_layout"
+        android:gravity="center_vertical"
+        android:text="@string/action_description"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+ 
+</RelativeLayout>

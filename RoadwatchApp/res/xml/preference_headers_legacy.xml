@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference 
+        android:title="@string/display_title"
+        android:summary="@string/display_summary"  >
+        <intent 
+            android:targetPackage="com.roadwatch.app"
+            android:targetClass="com.roadwatch.app.settings.SettingsActivity"
+            android:action="com.roadwatch.app.settings.DISPLAY_SETTINGS" />
+    </Preference>
+    <Preference 
+        android:title="@string/nav_integration_title"
+        android:summary="@string/nav_integration_summary" >
+        <intent 
+            android:targetPackage="com.roadwatch.app"
+            android:targetClass="com.roadwatch.app.settings.SettingsActivity"
+            android:action="com.roadwatch.app.settings.NAV_INTEGRATION_SETTINGS" />
+    </Preference>
+    <Preference 
+        android:title="@string/voice_recognition_title"
+        android:summary="@string/voice_recognition_summary" >
+        <intent 
+            android:targetPackage="com.roadwatch.app"
+            android:targetClass="com.roadwatch.app.settings.SettingsActivity"
+            android:action="com.roadwatch.app.settings.VOICE_RECOGNITION_SETTINGS" />
+    </Preference>
+    <!-- 
+    <Preference 
+        android:title="@string/car_sharing_title"
+        android:summary="@string/car_sharing_summary" >
+        <intent 
+            android:targetPackage="com.roadwatch.app"
+            android:targetClass="com.roadwatch.app.settings.SettingsActivity"
+            android:action="com.roadwatch.app.settings.CAR_SHARING_SETTINGS" />
+    </Preference>
+     -->
+    <Preference 
+        android:title="@string/about_title">
+        <intent 
+            android:targetPackage="com.roadwatch.app"
+            android:targetClass="com.roadwatch.app.settings.SettingsActivity"
+            android:action="com.roadwatch.app.settings.ABOUT_SETTINGS" />
+    </Preference>
+    
+</PreferenceScreen>

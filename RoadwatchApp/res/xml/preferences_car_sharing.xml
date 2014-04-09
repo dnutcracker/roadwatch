@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="pref_key_enable_car_sharing"
+        android:summary="@string/pref_enable_car_sharing_summary"
+        android:title="@string/pref_enable_car_sharing_title" />
+</PreferenceScreen>

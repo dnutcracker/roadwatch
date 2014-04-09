@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:com.roadwatch.app="http://schemas.android.com/apk/res-auto">
+
+<!-- 
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        com.roadwatch.app:showAsAction="collapseActionView|ifRoom"
+        android:title="@string/action_search"
+        com.roadwatch.app:actionViewClass="android.support.v7.widget.SearchView"/>
+ -->
+<!-- 
+    <item
+        android:id="@+id/debug_actions"
+        android:visible="false"
+        com.roadwatch.app:showAsAction="ifRoom"        
+        android:title="Debug">
+        
+        <menu >
+        	<item 
+        	    android:id="@+id/debug_stress_server_test"
+          		android:title="Stress Server Test"
+          		android:showAsAction="ifRoom"/>
+        </menu>
+    </item> 
+ -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_action_settings"
+        com.roadwatch.app:showAsAction="ifRoom"        
+        android:title="@string/action_settings"/>
+
+</menu>

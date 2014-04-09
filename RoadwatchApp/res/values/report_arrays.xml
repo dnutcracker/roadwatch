@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="danger_level_1_report_codes">
+        <item>5426</item>
+        <item>5435</item>
+        <item>5424</item>
+        <item>5457</item>
+        <item>5807</item>
+    </string-array>
+    
+    <string-array name="danger_level_2_report_codes">
+        <item>5439</item>
+        <item>5480</item>
+        <item>5430</item>
+        <item>5952</item>
+        <item>6738</item>
+    </string-array>
+    
+    <string-array name="danger_level_3_report_codes">
+        <item>2432</item>
+        <item>6458</item>
+        <item>3477</item>
+        <item>6192</item>
+        <item>6153</item>
+    </string-array>
+</resources>

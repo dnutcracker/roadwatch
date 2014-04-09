@@ -1,0 +1,37 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header 
+        android:fragment="com.roadwatch.app.settings.SettingsFragment"
+        android:title="@string/display_title"
+        android:summary="@string/display_summary">
+        <extra android:name="settings" android:value="display" />
+    </header>
+     
+    <header 
+        android:fragment="com.roadwatch.app.settings.SettingsFragment"
+        android:title="@string/nav_integration_title"
+        android:summary="@string/nav_integration_summary"> 
+        <extra android:name="settings" android:value="nav_integration" />
+    </header>
+    
+    <header 
+        android:fragment="com.roadwatch.app.settings.SettingsFragment"
+        android:title="@string/voice_recognition_title"
+        android:summary="@string/voice_recognition_summary"> 
+        <extra android:name="settings" android:value="voice_recognition" />
+    </header>
+    <!-- 
+    <header 
+        android:fragment="com.roadwatch.app.settings.SettingsFragment"
+        android:title="@string/car_sharing_title"
+        android:summary="@string/car_sharing_summary"> 
+        <extra android:name="settings" android:value="car_sharing" />
+    </header>
+     -->
+    <header 
+        android:fragment="com.roadwatch.app.settings.SettingsFragment"
+        android:title="@string/about_title"
+        android:summary="?android:attr/versionName"> 
+        <extra android:name="settings" android:value="about" />
+    </header>  
+    
+</preference-headers>

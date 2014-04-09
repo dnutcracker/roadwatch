@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="WebApp_ID" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <listener>
+    <listener-class>
+      com.roadwatch.server.ApiKeyInitializer
+    </listener-class>
+  </listener>
+
+  <!--  User Login/Register related servlets -->
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.login.RegisterServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/api/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.login.LoginServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/api/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetUsersServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.login.GetUsersServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetUsersServlet</servlet-name>
+    <url-pattern>/api/getUsers</url-pattern>
+  </servlet-mapping>
+  
+  <!--  Tracking license plates related servlets -->
+  
+  <servlet>
+    <servlet-name>ManageTrackedLicensePlatesServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.track.ManageTrackedLicensePlatesServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManageTrackedLicensePlatesServlet</servlet-name>
+    <url-pattern>/api/manageTrackedLicensePlates</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!--  Reports related servlets -->
+  
+  <servlet>
+    <servlet-name>AddReportServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.report.AddReportServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddReportServlet</servlet-name>
+    <url-pattern>/api/addReport</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>RemoveReportServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.report.RemoveReportServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveReportServlet</servlet-name>
+    <url-pattern>/api/removeReport</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetReportsServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.report.GetReportsServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetReportsServlet</servlet-name>
+    <url-pattern>/api/getReports</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Client Exceptions Logger -->
+  
+    <servlet>
+    <servlet-name>LogClientExceptionServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.LogClientExceptionServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogClientExceptionServlet</servlet-name>
+    <url-pattern>/api/logClientException</url-pattern>
+  </servlet-mapping>
+  
+  
+    <!--  Place holder -->
+    
+  <servlet>
+    <servlet-name>MaintenanceServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.MaintenanceServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MaintenanceServlet</servlet-name>
+    <url-pattern>/api/cron/MaintenanceServlet</url-pattern>
+  </servlet-mapping>
+ 
+   
+  <!--  OLD SERVLETS PENDING REMOVAL -->
+  
+  <servlet>
+    <servlet-name>UnregisterServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.UnregisterServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UnregisterServlet</servlet-name>
+    <url-pattern>/api/unregister</url-pattern>
+  </servlet-mapping>  
+
+  <servlet>
+    <servlet-name>SendAllMessagesServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.SendAllMessagesServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendAllMessagesServlet</servlet-name>
+    <url-pattern>/api/sendAll</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SendMessageServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.SendMessageServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendMessageServlet</servlet-name>
+    <url-pattern>/api/send</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <servlet-name>AdminViewServlet</servlet-name>
+    <servlet-class>
+      com.roadwatch.server.AdminViewServlet
+    </servlet-class>
+    	<load-on-startup>1</load-on-startup>
+  	</servlet>
+	<servlet-mapping>
+    	<servlet-name>AdminViewServlet</servlet-name>
+		<url-pattern>/admin/view</url-pattern>
+	</servlet-mapping>
+  
+	<filter>
+    	<filter-name>datastoreFilter</filter-name>
+    	<filter-class>org.slim3.datastore.DatastoreFilter</filter-class>
+	</filter>
+	<filter-mapping>
+        <filter-name>datastoreFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	
+	<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>admin</web-resource-name>
+        <url-pattern>/admin/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name>admin</role-name>
+    </auth-constraint>
+	</security-constraint>		
+	
+	<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>cron</web-resource-name>
+        <url-pattern>/cron/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name>admin</role-name>
+    </auth-constraint>
+</security-constraint>
+
+	<security-constraint>
+  <web-resource-collection>
+    <web-resource-name>ssl</web-resource-name>
+    <url-pattern>/api/*</url-pattern>
+  </web-resource-collection>
+  <user-data-constraint>
+    <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+  </user-data-constraint>
+</security-constraint>	
+
+</web-app>

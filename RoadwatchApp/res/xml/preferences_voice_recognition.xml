@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:disableDependentsState="true"
+        android:key="pref_key_voice_recognition_use_display"
+        android:summary="@string/pref_voice_recognition_use_display_summary"
+        android:title="@string/pref_voice_recognition_use_display_title" />
+
+    <ListPreference
+        android:defaultValue="en-US"
+        android:dependency="pref_key_voice_recognition_use_display"
+        android:entries="@array/language_description_list"
+        android:entryValues="@array/language_value_list"
+        android:key="pref_key_voice_recognition_language"
+        android:title="@string/language" />
+</PreferenceScreen>

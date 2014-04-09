@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="display_title">Display</string>
+    <string name="display_summary">UI-related settings</string>
+    <string name="language">Language</string>
+    <string name="nav_integration_title">Navigation Apps Integration</string>
+    <string name="nav_integration_summary">Allow integration with installed navigation applications</string>   
+    <string name="pref_use_nav_integration_title">Show report button</string>
+    <string name="pref_use_nav_integration_summary">Allow Roadwatch to show the report button inside the navigation app (only after driving has started)</string>
+    <string name="pref_use_nav_integration_only_when_driving_title">Only when driving</string>
+    <!-- string name="pref_use_nav_integration_only_when_driving_summary">Show the report button only after you have started driving</string-->
+    <string name="voice_recognition_title">Voice Recognition</string>
+    <string name="voice_recognition_summary">Setup preferred language</string>
+    <string name="pref_voice_recognition_use_display_title">Use display language</string>
+    <string name="pref_voice_recognition_use_display_summary">Voice recognition will use the same language as the display language</string>
+    <string name="car_sharing_title">Car Sharing</string>
+    <string name="car_sharing_summary">Allow other drivers (like friends or family members) to share your car</string>
+    <string name="pref_enable_car_sharing_title">Allow car sharing</string>
+    <string name="pref_enable_car_sharing_summary">You will be able to receive sharing requests that will appear under the \'Sharing\' tab</string>
+    <string name="about_title">About</string> 
+    
+    <string-array name="language_description_list">
+        <item>English</item>
+        <item>Hebrew</item>
+    </string-array>
+    <string-array name="language_value_list">
+        <item>en</item>
+        <item>iw</item>
+    </string-array>    
+</resources>

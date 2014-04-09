@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/step2_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="@string/login_wizard_step3_title"
+        android:textColor="@color/holo_text"
+        android:textStyle="bold"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:maxLength="25"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:maxLength="35"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:maxLength="25"
+        android:textSize="20sp" >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/login_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:textColor="#e30000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/wrongCredentialsHelpText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autoLink="email"
+        android:text="@string/login_wizard_step3_help"
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.87"
+        android:visibility="invisible" />
+
+</LinearLayout>

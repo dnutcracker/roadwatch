@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/license_plate_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:background="@drawable/lp_border"
+    android:orientation="horizontal" 
+    android:textDirection="ltr">
+
+    <ImageView
+        android:id="@+id/lp_extension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_lp_extension"
+        android:src="@drawable/lp_ext_isr"
+        android:text="@string/danger_button3" />
+
+    <TextView
+        android:id="@+id/license_plate"
+        style="@style/Widget.LicensePlate.TextView.Style"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"          
+        android:textSize="44sp">
+	
+    </TextView>
+
+</LinearLayout>

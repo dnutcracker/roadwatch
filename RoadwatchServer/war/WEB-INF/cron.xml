@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>  
+  <cron>
+    <url>/cron/MaintenanceServlet</url>
+    <description>Reserved for future use</description>
+    <schedule>every 48 hours</schedule>
+  </cron>
+</cronentries>

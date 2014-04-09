@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/holo_text"
+        android:id="@+id/welcomeText"
+        android:text="@string/login_wizard_step2_title"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="26sp" />
+       
+    <include
+        android:id="@+id/license_plate_layout"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"    	
+        layout="@layout/license_plate_edit_text_layout" />
+
+    <TextView
+        android:id="@+id/lp_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:textColor="#e30000"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/question_button"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:textColor="@color/holo_text"
+        android:text="@string/login_wizard_step_2_question_text"
+        android:gravity="center_vertical|top"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ProgressBar
+        android:id="@+id/lp_check_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.87"
+        android:visibility="invisible" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  We're forced to add '_' to the string name or else R class won't compile (number cannot be used as a Java indentifer name) -->
+<resources>
+    <!-- danger level 1 -->
+    <string name="_5426">Entering a busy intersection</string>
+    <string name="_5435">Driving on shoulder</string>
+    <string name="_5424">Disturbing or delaying traffic</string>
+    <string name="_5457">Not keeping right</string>
+    <string name="_5807">Littering from vehicle</string>
+    
+    <!-- danger level 2 -->
+    <string name="_5439">Weaving</string>
+    <string name="_5480">Illegal U-turn</string>
+    <string name="_5430">Wrong way on one-way street</string>
+    <string name="_5952">Driving over a safety zone</string>
+    <string name="_6738">Illegal turn from wrong lane</string>
+    
+    <!-- danger level 3 -->
+    <string name="_2432">Running a red light</string>
+    <string name="_6458">Not stopping for pedestrians</string>
+    <string name="_3477">Not stopping at a stop sign</string>
+    <string name="_6192">Failure to yield</string>
+    <string name="_6153">Overtaking on a solid line</string>    
+    
+</resources>

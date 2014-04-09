@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44000000"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.roadwatch.app.report.UnsentReportsActivity" >
+
+    <LinearLayout
+        android:id="@+id/search_progress_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/search_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/license_plate_layout"
+        layout="@layout/license_plate_edit_text_layout" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/search_summary"
+        android:layout_below="@+id/license_plate_layout"
+        android:fastScrollEnabled="true"
+        android:descendantFocusability="blocksDescendants" >
+
+    </ListView>
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/license_plate_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/no_search_results"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="26sp" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/search_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"        
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

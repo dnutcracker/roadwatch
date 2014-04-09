@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Make sure the contents of this files is also copied to res/values-he -->
+    <!-- Application identifiers -->
+    <string name="app_warning_message">RoadWatch - אזהרה</string>
+    <string name="crash_toast_text">אוי לא! האפליקציה התרסקה, השגיאה תשלח למחלקת הפיתוח</string>
+
+    <!-- App Menu title -->
+    <string name="action_settings">הגדרות</string>
+    <string name="action_search">חיפוש</string>
+    <string name="search_hint">מספר רכב</string>
+
+    <!-- Background Services -->
+    <string name="tap_to_send">לחץ על-מנת לערוך ולשלוח</string>
+    <string name="integrated_with_nav_app">משולב עם אפליקציית הניווט</string>
+    <string name="no_unsent_reports">אין דיווחים ממתינים להצגה</string>
+    <string name="notification_warning_title">RoadWatch - אזהרה</string>
+    <string name="notification_error_title">RoadWatch - שגיאה</string>
+    <string name="notification_report_error_title">RoadWatch - דיווח נכשל</string>
+    
+    <!-- Edit User Account texts -->
+    <string name="edit_user_account_title">עריכת חשבון משתמש</string>
+    <string name="edit_user_account">חשבון משתמש</string>
+    <string name="updated_user_account">פרטי משתמש עודכנו בהצלחה</string>
+    
+
+    <!-- Remote server error messages -->
+    <string name="bad_credentails">פרטי המשתמש אינם תואמים למספר הרכב הרשום במערכת</string>
+    <string name="bad_login_token">אנא הרשם מחדש</string>
+    <string name="license_plate_already_exist">מספר רכב כבר קיים במערכת</string>
+    <string name="db_failed_to_store_user">רישום המשתמש נכשל בשרת</string>
+    <string name="db_failed_to_add_report">רישום הדיווח נכשל בשרת</string>
+    <string name="report_too_frequent_error">לא ניתן לדווח על אותו רכב בתדירות גבוהה! (%1$s)</string>
+    <string name="connection_timeout">התחברות לשרת נכשלה</string>
+    <string name="failed_to_construct_json_object">בניית אובייקט מקומי נכשלה</string>
+    <string name="failed_to_parse_data_from_server">מידע שגוי הגיע מהשרת</string>
+    <string name="failed_to_register_user_with_gcm">רישום המשתמש בשרתי גוגל נכשל</string>
+    <string name="unexpected_server_error">שגיאת שרת לא צפויה</string>
+
+    <!-- Reports Fragment texts -->
+    <string name="report">דווח עכשיו!</string>
+    <string name="unsent_reports">דיווחים ממתינים</string>
+    <string name="sent_reports">דיווחים שנשלחו</string>
+    <string name="my_record">התיק שלי</string>
+
+    <!-- Main Activity texts -->
+    <string name="reports">דיווחים</string>
+    <string name="search">חיפוש</string>
+    <string name="tracked_cars">רכבים במעקב</string>
+    <string name="sharing">שיתוף</string>
+    <string name="tap_here_to_sign_in">לחץ כאן כדי להרשם!</string>
+    <string name="signed_in_message">%1$s (%2$s)</string>
+    <string name="exit_dialog_title">לצאת בלי לשלוח?</string>
+    <string name="exit_dialog_message_single">ישנו דיווח אחד ממתין</string>
+    <string name="exit_dialog_message_multiple">ישנם %1$d דיווחים ממתינים</string>
+    <string name="exit_dialog_exit_button">יציאה</string>
+    <string name="exit_dialog_cancel_button">ביטול</string>
+
+    <!-- Report Activity texts -->
+    <string name="title_activity_report">דיווח</string>
+    <string name="location_found">מיקום נוכחי נשמר</string>
+    <string name="lp_title">מספר רכב:</string>
+    <string name="no_gps_reception">אין קליטת ג\'י פי אס</string>
+    <string name="action_description">תאור המקרה:</string>
+    <string name="send_report_button">שלח</string>
+    <string name="save_report_button">שמור</string>
+    <string name="close_report_button">סגור</string>
+    <string name="danger_button1">מטרד</string>
+    <string name="danger_button2">סכנה</string>
+    <string name="danger_button3">סכנת חיים</string>
+    <string name="report_sent">דיווח נשלח בהצלחה</string>
+    <string name="report_deleted">דיווח נמחק</string>
+    <string name="sending_report">שולח דיווח&#8230;</string>
+    <string name="reporting_self_error">לא ניתן לדווח על עצמך!</string>
+    <string name="reporting_excessivly_error">לא ניתן לדווח דיווחים רצופים!</string>
+    <string name="saved_report">דיווח נשמר</string>
+    <string name="no_address_found">ללא כתובת</string>
+    <string name="say_license_plate">אמור מספר רכב עכשיו</string>
+    <string name="say_license_plate_again">שמעתי %1$s, נסה שנית</string>
+    <string name="send_report_error">שליחת דיווח נכשלה</string>
+    <string name="send_report_general_error_short">שליחת דיווח נכשלה בגלל בעיה בשרת</string>
+    <string name="send_report_general_error_long">כתוצאה מבעיה בשרת הדיווח אינו נשלח אך נשמר. אנא נסה לשלוח שנית מאוחר יותר</string>
+    <string name="unregistered_user_cannot_send">רק משתמשים רשומים יכולים לשלוח דיווח!</string>
+    <string name="report_wizard_step_title">איך מתחילים צעד %1$d מ 4</string>
+    <string name="report_wizard_step1">הכנס את מספר הרכב שעליו הינך מדווח</string>
+    <string name="report_wizard_step2">או פשוט לחץ ואמור אותו בקול רם!</string>
+    <string name="report_wizard_step3">בחר את התיאור המקרה המתאים ביותר</string>
+    <string name="report_wizard_step4">שלח!</string>
+
+    <!-- Unsent Reports Activity texts -->
+    <string name="title_activity_unsent_reports">דיווחים ממתינים לשליחה</string>
+    <string name="unresolved_address">מיקום נשמר ללא כתובת</string>
+    <string name="action_discard">מחק</string>
+    <string name="unsent_reports_notice">* דיווחים ממתינים נשמרים ל-24 שעות בלבד</string>
+
+    <!-- Sent Reports Activity texts -->
+    <string name="title_activity_sent_reports">דיווחים שנשלחו</string>
+    <string name="no_send_reports">אין דיווחים</string>
+    <string name="last_24_hours_reports">24 שעות אחרונות</string>
+    <string name="older_reports">ישן יותר</string>
+    
+
+    <!-- Edit Report Activity texts -->
+    <string name="title_activity_edit_report">עריכת דיווח</string>
+    <string name="title_activity_fix_report">תיקון דיווח</string>
+    <string name="title_activity_view_report">צפייה בדיווח</string>
+    <string name="report_send_cancelled">שליחת דיווח בוטלה</string>
+    <string name="report_update_cancelled">עידכון דיווח בוטל</string>
+    <string name="report_updated">דיווח עודכן בהצלחה</string>
+    <string name="report_cannot_remove">לא ניתן למחוק דיווח שנצפה ע\"י אנשים אחרים</string>
+
+    <!-- Search Fragment texts -->
+    <string name="no_search_results">לא נמצאו דיווחים</string>
+    <string name="no_sharing_requests">לא התקבלו בקשות לשיתוף</string>
+    <string name="list_summary">%1$d דיווחים</string>
+
+    <!-- Tracked Cars Fragment texts -->
+    <string name="no_tracked_cars">אין רכבים במעקב</string>
+    <string name="add_tracked_car_title">הוסף רכב למעקב</string>
+    <string name="edit_tracked_car_dialog_title">ערוך רכב למעקב</string>    
+    <string name="tracked_car_name">הרכב של %1$s:</string>
+    <string name="add_tracked_car_button">הוסף רכב</string>
+    <string name="add_tracked_car_description">ברצוני לקבל התראות בזמן אמת על דיווחים שדווחו על הרכב הבא:</string>
+    <string name="add">הוסף</string>
+    <string name="cancel">בטל</string>
+    <string name="update">עדכן</string>
+    <string name="remove">הסר</string>    
+    <string name="tracked_name_hint">שם</string>
+    <string name="tracked_license_plate_hint">מספר רכב</string>
+    <string name="tracked_license_plate_already_exists">הרכב הזה כבר נמצא במעקב על-ידך</string>
+    <string name="tracking_own_license_plate">הינך כבר מקבל התראות על רכבך באופן אוטומטי</string>
+    <string name="tracked_info_invalid">שם משתמש או מספר רכב אינם תקינים</string>
+    <string name="tracked_cars_available">רכבים למעקב זמינים: %1$d</string>
+    <string name="purchase">קנה</string>
+    <string name="purchase_canclled">קניה בוטלה</string>
+    
+
+    <!-- Map Activity texts -->
+    <string name="title_activity_map_for">מפת דיווחים עבור %1$s</string>
+    <string name="title_activity_map">מפת דיווחים</string>
+
+    <!-- Notification texts -->
+    <string name="notification_reported_at">ב</string>
+    <string name="notification_report_blocked_title">RoadWatch מגן עליך</string>
+    <string name="notification_report_blocked_short">דיווח שדווח עליך בוטל ע\"י המערכת</string>
+    <string name="notification_report_blocked_long">דיווח שדווח עליך בוטל  מאחר והמערכת זיהתה כי לא היית נוכח במקום הדיווח</string>
+    <string name="notification_report_good_title">כל הכבוד!</string>
+    <string name="notification_report_witness_short">הדיווח נצפה ע"י משתמשים נוספים!</string>
+    <string name="notification_report_witness_long">הדיווח שלך נצפה ודווח גם ע"י משתמשים נוספים</string>
+    <string name="notification_tracked_car_reported_title">דיווח על %1$s!</string>
+
+</resources>

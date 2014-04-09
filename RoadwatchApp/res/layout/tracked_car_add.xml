@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/add_tracked_car_dialog_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:text="@string/add_tracked_car_description"
+        android:enabled="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add_tracked_car_dialog_description"
+        android:inputType="textPersonName"
+        android:maxLength="25"
+        android:enabled="true"
+        android:hint="@string/tracked_name_hint" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/new_tracked_license_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/name"
+        android:ems="9"
+        android:maxLength="9"
+        android:inputType="phone"
+        android:enabled="true"
+        android:hint="@string/tracked_license_plate_hint" />
+
+    <Button
+        android:id="@+id/tracked_car_add_button"
+        style="@style/RoadWatchButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/available_tracked_cars_text"
+        android:layout_below="@+id/purchase_button"
+        android:layout_marginTop="18dp"
+        android:onClick="addTrackedCar"
+        android:paddingBottom="2dp"
+        android:text="@string/add"
+        android:enabled="true"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/tracked_car_cancel_button"
+        style="@style/RoadWatchButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingBottom="2dp"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/tracked_car_add_button"
+        android:layout_alignBottom="@+id/tracked_car_add_button"
+        android:layout_alignRight="@+id/new_tracked_license_plate"
+        android:layout_toRightOf="@+id/tracked_car_add_button"
+        android:onClick="cancel"
+        android:text="@string/cancel" />
+
+    <TextView
+        android:id="@+id/available_tracked_cars_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/purchase_button"
+        android:layout_alignLeft="@+id/new_tracked_license_plate"
+        android:layout_alignTop="@+id/purchase_button"
+        android:text="@string/tracked_cars_available"
+        android:gravity="center_vertical"
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/purchase_button"
+        style="@style/RoadWatchButtonStyle"
+        android:layout_marginTop="15dp"
+        android:paddingTop="5dp"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/new_tracked_license_plate"
+        android:onClick="purchaseTrackedCar"
+        android:visibility="invisible"
+        android:text="@string/purchase" />
+
+</RelativeLayout>

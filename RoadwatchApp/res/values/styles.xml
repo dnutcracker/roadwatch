@@ -1,0 +1,98 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:com.roadwatch.app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <color name="semi_transparent">#40000000</color>
+
+    <style name="AppBaseTheme" parent="com.roadwatch.app:Theme.AppCompat">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="DialogActivityTheme" parent="android:Theme.Dialog">
+        <!-- Theme used for dialog activities -->
+    </style>
+
+    <style name="SlidingActivityTheme" parent="@style/AppTheme">
+        <item name="android:windowAnimationStyle">@style/ActivitySlideAnimation</item>
+    </style>
+
+    <style name="RoadWatchButtonStyle" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/big_button_selector</item>
+        <!-- <item name="android:layout_centerHorizontal">true</item>-->
+        <!-- <item name="android:layout_width">280dp</item>-->
+        <!-- <item name="android:textSize">28sp</item>-->
+        <item name="android:paddingBottom">5sp</item>
+    </style>
+    
+    <style name="RoadWatchSmallButtonStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/small_button_selector</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>    
+    
+    <!-- License plate special style (editable) edit text -->
+    <style name="Widget.LicensePlate.EditText" parent="@android:style/Widget.EditText">
+	    <item name="android:ems">9</item>
+	    <item name="android:hint">@string/license_plate_hint</item>
+	    <item name="android:inputType">phone</item>
+	    <item name="android:maxLength">9</item>
+	    <item name="android:maxLines">1</item>
+	    <item name="android:paddingBottom">0dp</item>
+	    <item name="android:paddingTop">0dp</item>
+	    <item name="android:textColor">#000000</item>
+	    <item name="android:textSize">40sp</item>
+	    <item name="android:textStyle">bold</item>   
+	    <item name="android:typeface">monospace</item>   
+	</style>
+	
+    <!-- Add special style with transparent bg for Gingerbread  -->
+    <style name="Widget.LicensePlate.EditText.Style">
+	    <item name="android:background">#00000000</item>
+	    <item name="android:gravity">center</item> 
+	</style>    
+	
+    <!-- License plate special style (non-editable) text view-->
+    <style name="Widget.LicensePlate.TextView.Style" parent="@android:style/Widget.TextView">
+	    <item name="android:maxLines">1</item>
+	    <item name="android:paddingBottom">0dp</item>
+	    <item name="android:paddingTop">0dp</item>
+	    <item name="android:textColor">#000000</item>
+	    <item name="android:textSize">40sp</item>
+	    <item name="android:layout_marginLeft">5dp</item>
+	    <item name="android:textStyle">bold</item>   
+	    <item name="android:typeface">monospace</item>   
+	</style>
+
+    <!-- PENDING : For some reason only the 'Open' animation is used - no animation upon 'Close' -->
+    <style name="ActivitySlideAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/semi_transparent</item> <!--  @android:color/transparent -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

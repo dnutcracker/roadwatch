@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_bg_start">#33B5E5</color>
+    <color name="splash_bg_end">#252B30</color>
+    <color name="splash_bg_blue">#76AAE4</color>
+    <color name="splash_bg_blue2">#000000</color>
+    <color name="holo_text">#ff0099cc</color>
+    <color name="lp_yellow">#FFF2D133</color>
+    <color name="lp_red">#FFFF3300</color>
+</resources>

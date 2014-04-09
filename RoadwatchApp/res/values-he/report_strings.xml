@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--  Make sure the contents of this files is also copied to res/values-he -->
+
+<!--  We're forced to add '_' to the string name or else R class won't compile (number cannot be used as a Java indentifer name) -->
+<resources>
+    <!-- danger level 1 -->
+    <string name="_5426">כניסה לצומת שאינו פנוי</string>
+    <string name="_5435">נסיעה אסורה בשוליים (פס צהוב)</string>
+    <string name="_5424">הפרעה לתנועה (הדחפות לנתיב)</string>
+    <string name="_5457">נהיגה שלא בימין הדרך</string>
+    <string name="_5807">השלכת פסולת מהרכב</string>
+    
+    <!-- danger level 2 -->
+    <string name="_5439">אי-שמירה על נתיב התנועה</string>
+    <string name="_5480">ביצוע פניית פרסה במקום אסור</string>
+    <string name="_5430">נהיגה בכיוון הפוך מהתנועה</string>
+    <string name="_5952">חציית שטח/קו הפרדה רצוף</string>
+    <string name="_6738">אי-ציות לכיוון הנסיעה בנתיב</string>
+    
+    <!-- danger level 3 -->
+    <string name="_2432">מעבר באור אדום</string>
+    <string name="_6458">אי-מתן זכות קדימה להולכי רגל</string>
+    <string name="_6192">אי-מתן זכות קדימה לרכב</string>
+    <string name="_3477">אי-ציות לתמרור עצור</string>
+    <string name="_6153">עקיפה על  קו-הפרדה רצוף</string>    
+    
+</resources>

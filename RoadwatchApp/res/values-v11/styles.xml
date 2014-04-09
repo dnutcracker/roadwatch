@@ -1,0 +1,20 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.roadwatch.app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="com.roadwatch.app:Theme.AppCompat">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+    
+    <style name="DialogActivityTheme" parent="android:Theme.Holo.Dialog">
+        <!--  Theme used for dialog activities -->
+    </style>
+    
+        <!-- From v11 we don't need to specify a transparent bg (as in Gingerbread)  -->
+    <style name="Widget.LicensePlate.EditText.Style">	       
+	</style>
+    
+</resources>
