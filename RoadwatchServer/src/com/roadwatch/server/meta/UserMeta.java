@@ -1,6 +1,6 @@
 package com.roadwatch.server.meta;
 
-//@javax.annotation.Generated(value = { "slim3-gen", "@VERSION@" }, date = "2014-04-09 15:08:32")
+//@javax.annotation.Generated(value = { "slim3-gen", "@VERSION@" }, date = "2014-04-09 15:31:26")
 /** */
 public final class UserMeta extends org.slim3.datastore.ModelMeta<com.roadwatch.server.model.User> {
 

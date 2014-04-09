@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\android\\AndroidWorkspace\\RoadwatchApp\\src\\com\\android\\vending\\billing\\IInAppBillingService.aidl
+ * Original file: D:\\android\\github\\roadwatch\\RoadwatchApp\\src\\com\\android\\vending\\billing\\IInAppBillingService.aidl
  */
 package com.android.vending.billing;
 /**
